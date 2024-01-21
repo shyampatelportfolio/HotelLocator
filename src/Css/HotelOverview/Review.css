@@ -1,0 +1,451 @@
+.review-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-left: 0vw;
+    background-color:rgb(0, 0, 0);
+}
+.person-review-card-container{
+    position: relative;
+    z-index: 2;
+    height: 71vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.review-card{
+    color: rgb(255, 255, 255);
+    width: 40vw;
+    height: 80vh;
+    margin-left: 0vw;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 1vw 2vh 3vw;
+    margin-left: 4vw;
+}
+.review-card-background{
+    width: 100%;
+    height: 40vh;
+    border-radius: 1vh;
+}
+.review-card-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1vh;
+    opacity: 100%;
+    filter: grayscale(0.3);
+}
+.review-background{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: grayscale(0.5);
+}
+.review-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 30%;
+    filter: blur(100px);
+    /* animation: reviewAnimate 3s infinite alternate; */
+}
+@keyframes reviewAnimate{
+    0%{
+        object-position: 0 30%;
+        scale: 1;
+        opacity: 25%;
+    }
+    100%{
+        scale: 1.5;
+        object-position: 0 100%;
+        opacity: 30%;
+    }
+}
+.review-background-gradient{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+}
+.review-background video{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 50%;
+}
+.review-card::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 10px;
+    right: -1.5vw;
+    top: 0;
+}
+.review-card-circle-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4vh;
+}
+.review-card-circle-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+.review-card-circle-item svg{
+    height: 11vh;
+    width: 11vh;
+}
+.outer-circle-svg{
+    position: absolute;
+}
+.border-circle {
+    stroke-dasharray: 125;
+    stroke-dashoffset: 125;
+    stroke-linecap: round;
+    transition: all 1s;
+}
+.review-card-circle-text{
+    width: 13vh;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.review-card-title{
+    position: absolute;
+    bottom: 30vh;
+    text-align: center;
+    width: 70%;
+    font-size: 55px;
+    font-weight: 100;
+}
+.review-card-subtitle{
+    font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 4vh;
+}
+.review-stars-rating-container{
+    display: flex;
+    align-items: center;
+    padding: 4vh 0vw 2vh 0.5vw;
+    box-sizing: border-box;
+    width: 100%;
+}
+.review-stars-text-container{
+}
+.review-container svg{
+    fill: rgb(188, 253, 255);
+
+
+    padding-top: 1.5vh;
+}
+.review-stars-rating{
+    font-size: 35px;
+    font-weight: 500;
+    padding-right: 1.75vw;
+    padding-bottom: 1vh;
+}
+.review-stars-text{
+    color: rgb(188, 188, 188);
+    font-size: 12px;
+    font-weight: 500;
+}
+.review-card-list-container{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    height: 30vh;
+    margin-top: 0vh;
+    box-sizing: border-box;
+    padding-left: 0.5vw;
+}
+.review-card-list-item{
+    height: 3vh;
+    margin-bottom: 0.5vh;
+    display: flex;
+    align-items: center;    
+}
+.review-card-list-item-stars-container{
+    height: 100%;
+    width: 17%;
+    display: flex;
+}
+.review-card-list-item-line-container{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+.review-card-list-item-line-background{
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgba(234, 234, 234, 0.552);
+}
+.review-card-list-item-line-active{
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgb(136, 251, 255);
+    transition: all 1s;
+}
+.review-card-list-item-stars-container svg{
+    fill: rgb(188, 253, 255);
+
+}
+.review-card-list-item svg{
+    padding: 0;
+}
+.review-card-percentage{
+    width: 10%;
+    box-sizing: border-box;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    font-size: 12px;
+    font-weight: 400;
+    color:rgb(255, 255, 255);
+    opacity: 0%;
+    transition: all 1s;
+}
+@keyframes review-icon {
+    from{
+        width: 0%;
+    }
+}
+.person-review-card-wrapper{
+    position: relative;
+    height: 80vh;
+    padding-top: 0vh;
+    overflow: hidden;
+    width: 100%;
+    transition: opacity 1s;
+}
+.person-review-card-wrapper-carousel{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    transition: all 1s;
+    transform: translateY(0);
+}
+.person-review-card-pagination{
+    position: absolute;
+    width: 50%;
+    height: 3.5vh;
+    bottom: 1vh;
+    box-shadow: 0 0 15px rgba(17, 17, 17, 0.401);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0.5vh;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person-review-card-pagination-buttons{
+    position: relative;
+    width: 6.7vw;
+    display: flex;
+    overflow: hidden;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+}
+.person-review-card-pagination-button{
+    height: 80%;
+    color: rgb(255, 255, 255);
+    width: 1.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.person-review-card-pagination-button.selected{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.person-review-card-pagination-button.selected::before{
+    --color-button: rgba(255, 255, 255, 0.063);
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    width: 105%;
+    height: 105%;
+    border-radius: 3px;
+    border: 1px solid var(--color-button);
+    background-color: var(--color-button);
+}
+.person-review-card-pagination-carousel{
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    transition: all 0.5s;
+    transform: translateX(0%);
+}
+.person-review-card-left-chevron{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    left: -0.5vw;
+    width: 1.5vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.person-review-card-right-chevron{
+    cursor: pointer;
+    z-index: 1;
+    right: -0.5vw;
+    width: 1.5vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.person-chevron svg{
+    fill: none;
+    padding-top: 0;
+    stroke: white;
+}
+.person-review-card-filter{
+    position: relative;
+    z-index: 3;
+    width: 90%;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+}
+.person-review-card-filter-title{
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5vw;
+}
+.person-review-card-filter-subtitle{
+    position: relative;
+    bottom: 1px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.person-review-card-filter-options{
+    display: flex;
+    align-items: center;
+    padding: 1vh 0vw 0vh 0vw;
+    gap: 3.5vw;
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+}
+.person-review-card-filter-option{
+    position: relative;
+    cursor: pointer;
+}
+.person-review-card-filter-option svg{
+    position: absolute;
+    fill: none;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    padding: 0;
+    height: 100%;
+    padding-top: 2px;
+}
+.person-review-card-filter-option-dropdown{
+    padding: 1vh 1vw 3vh 0vw;
+    background-color: transparent;
+    height: min-content;
+    position: absolute;
+    display: none;
+}
+.person-review-card-filter:hover ~ .person-review-card-wrapper{
+    opacity: 0.2;
+}
+.person-review-card-filter-option-dropdown-item{
+    height: 100%;
+    width: max-content;
+    padding: 0.2vh 1.5vw 0 0vw;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+.person-review-card-filter-option-dropdown-item:hover{
+    border-bottom: 1px solid white;
+}
+.person-review-card-filter-option:hover .person-review-card-filter-option-dropdown{
+    display: block;
+}
+.person-review-card{
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    box-sizing: border-box;
+    padding: 3vh 2vw 0vh 2vw;
+    font-size: 12px;
+    font-weight: 100;
+    box-shadow: 0 0 15px rgb(51, 51, 51);
+    border: 1px solid rgba(167, 167, 167, 0.312);
+    backdrop-filter: blur(10px);
+}
+.person-review-card-name{
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 1vh;
+}
+.person-review-card-svg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 2vw;
+    bottom: 3vh;
+    background: url('/Svg/Like.svg');
+    background-repeat: no-repeat;
+}
+.person-review-card-rating svg{
+    padding: 0;
+    fill: rgb(188, 253, 255);
+}
+.stars-container{
+    display: flex;
+}
+.person-review-card-title{
+    margin-top: 2.5vh;
+    font-size: 13px;
+    font-weight: 400;
+}
+.person-review-card-description{
+    margin-top: 0.5vh;
+    font-weight: 200;
+    color: rgb(229, 229, 229);
+}
+.person-review-card-date{
+    margin-top: 1vh;
+    font-weight: 300;
+    color: rgba(247, 247, 247, 0.526);
+    font-size: 10px;
+    padding-bottom: 3vh;
+}

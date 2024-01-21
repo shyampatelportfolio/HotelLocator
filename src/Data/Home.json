@@ -1,0 +1,50 @@
+{
+    "City4": {
+        "coordinates" : {
+            "lat" : 45.4408474,
+            "lon" : 12.3155151
+        },
+        "title" : "Venice",
+        "description" : "Venice is a unique and enchanting city in northeastern Italy renowned for its intricate network of canals, historic architecture, and picturesque bridges, including the iconic Rialto Bridge and Bridge of Sighs. Often referred to as the City of Canals, Venice is a UNESCO World Heritage Site and a popular destination for tourists seeking its romantic ambiance and rich cultural heritage."
+    },
+    "City5": {
+        "coordinates" : {
+            "lat" : 44.837789,
+            "lon" : -0.57918
+        },
+        "title" : "Bordeaux",
+        "description" : "Bordeaux is a city in southwestern France, known globally for its prestigious wine-producing region. The city's historic architecture, vibrant culture, and exceptional wine estates attract visitors from around the world, making it a popular destination for wine enthusiasts and travelers alike."
+    },
+    "City6": {
+        "coordinates" : {
+            "lat" : 46.0569465,
+            "lon" : 14.5057515
+        },
+        "title" : "Slovenia",
+        "description" : "Nestled in the heart of Europe, Slovenia is a hidden gem waiting to be discovered by avid travelers. This small yet enchanting country captivates visitors with its diverse landscapes, from the stunning Alpine peaks to the picturesque coastal areas along the Adriatic Sea. Slovenia boasts a rich cultural heritage reflected in its charming medieval towns, such as Ljubljana, the vibrant capital adorned with a fairytale-like castle. Outdoor enthusiasts will find paradise in the country's pristine lakes, deep caves, and emerald-green rivers, offering opportunities for hiking, skiing, and water sports. "
+    },
+    "City1": {
+        "coordinates" : {
+            "lat" : -22.9068467,
+            "lon" : -43.1728965
+        },
+        "title" : "Rio de Janeiro",
+        "description" : "Rio de Janeiro is a lively coastal city in Brazil, famed for its breathtaking natural beauty, including the iconic Christ the Redeemer statue and stunning beaches like Copacabana and Ipanema. With its vibrant carnival celebrations, samba music, and lively atmosphere, Rio de Janeiro is a top destination that captures the essence of Brazilian culture and hospitality."
+    },
+    "City2": {
+        "coordinates" : {
+            "lat" : 41.8781136,
+            "lon" : -87.6297982
+        },
+        "title" : "Chicago",
+        "description" : "Chicago is a vibrant and culturally diverse city located in the state of Illinois, USA. Known as the Windy City, it is renowned for its stunning architecture, especially its iconic skyscrapers like the Willis Tower and John Hancock Center. Chicago is a hub of arts and culture, boasting world-class museums, theaters, and music venues, including the Art Institute of Chicago and the famous 'Chicago Symphony Orchestra'."
+    },
+    "City3": {
+        "coordinates" : {
+            "lat" : 64.1469868,
+            "lon" : -21.9407552
+        },
+        "title" : "Reykjavík",
+        "description" : "Reykjavik is the capital and largest city of Iceland, nestled on the country's southwestern coast. Known for its stunning natural landscapes, geothermal springs, and a vibrant arts and music scene, Reykjavik offers a unique blend of modernity and Icelandic traditions."
+    }
+}

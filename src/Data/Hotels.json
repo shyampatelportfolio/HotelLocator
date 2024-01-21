@@ -1,0 +1,222 @@
+
+{
+    "information" : {
+    "Cleaning" : [
+        {
+            "Cleanliness measures" : [
+                "Disinfectant is used to clean the property",
+                "High-touch surfaces are cleaned and disinfected",
+                "Sheets and towels are washed at 60°C or hotter",
+                "Follows the regional cleaning and disinfection practices of Safe Tourism Certified (Spain)",
+                "Follows the industry cleaning and disinfection practices of Ecolab (third-party expert - Global) and Bureau Veritas (third-party expert - Global)"               
+            ]
+        },
+        {
+            "Check-in" : [
+                "Contactless social distancing and check-out",
+                "Cashless transactions are available for all charges at the property",
+                "Protective shields in place at main contact areas",
+                "Guest rooms kept vacant for 48 hours between stays",
+                "Social distancing measures in place",
+                "Contactless room service is available."
+            ]
+        },
+        {
+            "Safety measures" : [
+                "Personal protective equipment worn by staff",
+                "Temperature checks given to staff",
+                "Temperature checks available for guests",
+                "Masks and gloves available",
+                "Masks are required at the property",
+                "Hand sanitiser provided",
+                "Enhanced food service safety measures are in place",
+                "Individually wrapped food options available for breakfast and through room service"
+            ]
+        }
+    ],
+    "PropertyAmenities" : [
+        {
+            "Internet" : ["Available in all rooms: Free WiFi and wired Internet",
+            "Available in some public areas: Free WiFi and wired Internet"
+            ]
+        },
+        {
+            "Parking and public transport " : ["Self parking on site (EUR 10 per day)",
+            "Extended parking on site (EUR 10 per night)",
+            "Limited on-site parking",
+            "Free off-site parking",
+            "Free 24-hour return airport shuttle"
+            ]
+        },
+        {
+            "Food and drink " : ["Buffet breakfast available for a fee daily 6:00 AM to10:30 AM: EUR 19.80 for adults and EUR 9.90 for children",
+            "2 restaurants",
+            "1 bar"
+            ]
+        },
+        {
+            "Restaurants on site" : ["La Sal Marina ",
+            "Terraza Garden ",
+            "Sports Bar "
+            ]
+        },
+        {
+            "Things to do" : ["Fitness centre ",
+            "Seasonal outdoor pool "
+            ]
+        },
+        {
+            "Family friendly " : ["Free cots/infant beds",
+            "Laundry facilities",
+            "Rollaway/extra beds (surcharge)",
+            "Seasonal outdoor pool",
+            "Snack bar/deli"
+            ]
+        },
+        {
+            "Conveniences " : ["Lift ",
+            "Front-desk safe "
+            ]
+        },
+        {
+            "Guest services " : ["24-hour front desk ",
+            "Daily housekeeping ",
+            "Dry-cleaning service ",
+            "Laundry facilities ",
+            "Luggage storage ",
+            "Multilingual staff "
+            ]
+        },
+        {
+            "Business services " : ["24-hour business centre ",
+            "Computer station ",
+            "Conference space (5425 square feet) ",
+            "Meeting rooms - 12 "
+            ]
+        },
+        {
+            "Outdoors " : ["Garden ",
+            "Outdoor furniture",
+            "Terrace "
+            ]
+        },
+        {
+            "Accessibility " : ["If you have any requests for specific accessibility needs, please contact the property using the information on the reservation confirmation received after booking. ",
+            "Accessible bathroom (selected rooms)",
+            "Braille signage ",
+            "Lift ",
+            "Handrails in stairwells ",
+            "In-room accessibility (selected rooms) ",
+            "Roll-in shower (selected rooms) ",
+            "Step-free path to entrance ",
+            "Wheelchair-accessible path to lift ",
+            "Wheelchair-accessible registration desk ",
+            "Wheelchair-accessible restaurant",
+            "Wheelchair-accessible (may have limits) ",
+            "Wheelchairs available on site "
+            ]
+        }
+    ],
+    "RoomAmenities" : [
+        {
+            "Bedroom " : ["Air conditioning ",
+            "Bed sheets ",
+            "Blackout drapes/curtains ",
+            "Free cots/infant beds ",
+            "Heating ",
+            "Premium bedding ",
+            "Rollaway/extra beds (surcharge) "
+            ]
+        },
+        {
+            "Bathroom " : ["Hairdryer ",
+            "Towels "
+            ]
+        },
+        {
+            "Entertainment " : ["50-inch flat-screen TV ",
+            "Digital channels ",
+            "iPod dock "
+            ]
+        },
+        {
+            "More " : ["Desk ",
+            "Iron/ironing board ",
+            "Laptop-compatible safe ",
+            "LED light bulbs ",
+            "Phone "
+            ]
+        }
+    ],
+    "Policies" : [
+        {
+            "Check-in" : ["Check-in from 3:00 PM - noon",
+            "Early check-in subject to availability",
+            "Early check-in is available for a fee ",
+            "Late check-in subject to availability",
+            "Minimum check-in age - 18 "
+            ]
+        },
+        {
+            "Special check-in instructions" : ["Front desk staff will greet guests on arrival",
+            "For more details, please contact the property using the information on the booking confirmation",
+            "This property is located in the city's Low Emission Zone; only low-emission vehicles are permitted to enter. Guests with non-Spanish license plates must register their vehicle with the city in advance."
+            ]
+        },
+        {
+            "Access methods" : ["Staffed front desk"
+            ]
+        },
+        {
+            "Pets" : ["Pets not allowed (service animals are welcome, and are exempt from fees)"
+            ]
+        },
+        {
+            "Children and extra beds" : ["Children are welcome",
+            "Rollaway/extra beds are available for EUR 44.0 per night. ",
+            "Free cots are available on request at the property "
+            ]
+        },
+        {
+            "Payment types at the property" : ["American Express",
+            "Diners Club International",
+            "MasterCard",
+            "Visa"
+            ]
+        }
+    ],
+    "ImportantInformation" : [
+        {
+            "Fees" : ["You'll be asked to pay the following charges at the property: A tax is imposed by the city: EUR 1.32 per person, per night, up to 7 nights. This tax does not apply to children under 17 years of age. ",
+            "We have included all charges provided to us by the property. "
+            ]
+        },
+        {
+            "Optional extras" : ["Fee for buffet breakfast: from approximately EUR 19.80 for adults and from EUR 9.90 for children",
+            "Self-parking fee: EUR 10 per day",
+            "Extended parking fee: EUR 10 per night",
+            "Late check-out is available for a fee (subject to availability)",
+            "Rollaway bed fee: EUR 44.0 per night",
+            "The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change. "
+            ]
+        },
+        {
+            "You need to know" : ["This property is managed by a professional host. The provision of housing is linked to their trade, business or profession. ",
+            "Extra-person charges may apply and vary depending on property policy",
+            "Government-issued photo identification and a credit card, debit card or cash deposit may be required at check-in for incidental charges ",
+            "Special requests are subject to availability upon check-in and may incur additional charges; special requests cannot be guaranteed",
+            "This property accepts credit cards and debit cards; cash is not accepted",
+            "Safety features at this property include a carbon monoxide detector, a fire extinguisher, a smoke detector, a security system, a first aid kit and window guards",
+            "Please note that cultural norms and guest policies may differ by country and by property; the policies listed are provided by the property"
+            ]
+        },
+        {
+            "We should mention" : ["Cash transactions at this property cannot exceed EUR 1000, due to national regulations; for further details, please contact the property using the information in the booking confirmation",
+            "The seasonal pool will be open from June to October ",
+            "Pool access available from 10:00 AM to 6:00 PM",
+            "Only registered guests are allowed in the guestrooms"
+            ]
+        }
+    ]
+  } 
+}

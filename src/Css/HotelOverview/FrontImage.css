@@ -1,0 +1,325 @@
+.section{
+    height: 100vh;
+    width: 100vw;
+}
+.loader{
+    border: 2px solid rgb(234, 234, 234); 
+    border-top: 2px solid #059bff; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spinLoader 1s linear infinite; 
+}
+@keyframes spinLoader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.hotel-nav-left{
+    position: fixed;
+    z-index: 10;
+    top: 10vh;
+    left: 3vw;
+    width: 10vh;
+    height: 70vh;
+    display: flex;
+    opacity: 0%;
+    transition: all 1s;
+}
+.hotel-nav-container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hotel-nav-symbol{
+    box-sizing: border-box;
+    height: 1.2vh;
+    width: 1.2vh;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 1s;
+}
+.hotel-nav-symbol.previous{
+    background-color: rgb(255, 255, 255);
+}
+.hotel-nav-symbol.selected{
+    box-shadow: 0 0 0px 1px white;
+    background-color: white;
+    animation: glow 1s infinite;
+}
+@keyframes glow{
+    0%{
+        background-color: rgb(0, 255, 255);
+    }
+    100%{
+        background-color: white;
+    }
+}
+.hotel-nav-line{
+    box-sizing: border-box;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    position: relative;
+    height: 11vh;
+    width: 1px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(74, 74, 74);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.hotel-nav-line::after{
+    box-sizing: border-box;
+    position: relative;
+    content: "";
+    width:1px;
+    background-color: rgb(255, 255, 255);
+    height: 0%;
+    transition: all 0.7s;
+}
+.hotel-nav-line.previous::after{
+    height: 100%;
+}
+.location{
+    color: white;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 200;
+    height: 18px;
+}
+.location svg path{
+    fill: white;
+    stroke: white;
+}
+.location svg{
+    height: 90%;
+    width: 20px;
+    padding-right: 0.5vw;
+}
+.stars-rating-container{
+    display: flex;
+} 
+.stars{
+    padding-top: 1vh;
+    padding-left: 0.25vw;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    padding-bottom: 5vh;
+}
+.stars-rating{
+    padding-right: 10%;
+}
+.stars svg{
+    fill: rgb(255, 148, 60);
+}
+.overview-container{
+    background-color: black;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.overview-carousel{
+    --item-index: 0;
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    transition: all 1s;
+}
+.image-container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.front-image-overview{
+    position: relative;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 90%;
+    transition: all 1s;
+}
+.front-image.move {
+    width: 0%;
+    left: 7vw;
+}
+.front-image-container-title{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 50px;
+    padding-bottom: 2vh;
+    transition: all 1s;
+    padding-left: 3vw;
+    padding-top: 4vh;
+    height: auto;
+}
+.front-image-container-title.moveleft{
+    left: 7vw;
+}
+.front-image-container-title.movedown{
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 24vh;
+}
+.front-image-container-body{
+    padding-top: 2vh;
+    padding-left: 3vw;
+    transition: all 1s;
+    opacity: 100%;
+}
+.front-image-container-body.fadeout{
+    opacity: 0%;
+}
+.front-image-container-body-title{
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 2vh;
+}
+.front-image-container-body-description{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+    color: rgb(195, 195, 195);
+    width: 90%;
+    height: 11.5vh;
+    overflow: hidden;
+}
+.front-image-button{
+    width: 24vw;
+    height: 5.5vh;
+    border-radius: 0.5vh;
+    /* background-color: rgb(255, 228, 193); */
+    margin-top: 7vh;
+    margin-left: 0vw;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.front-image-button-svg{
+    width: 1.5vw;
+    height: 2vh;
+    background: url('/Svg/ChevronDown.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.front-image.flash{
+    animation: flash 1s infinite;
+}
+@keyframes flash {
+    from{
+        border: 1px solid rgb(120, 255, 251);
+    }
+    to{
+        border: 1px solid black;
+    }
+}
+.front-image{
+    position: relative;
+    box-sizing: border-box;
+    left: 0;
+    width: 65vw;
+    height: 90%;
+    border-radius: 1vh;
+    transition: all 1s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+}
+.front-image-carousel{
+    position: relative;
+    height: 89%;
+    width: 100%;
+    border-radius: 1vh;
+    overflow: hidden;
+    opacity: 100%;
+}
+.front-image-carousel-item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vh;
+    object-fit: cover;
+}
+.front-image-carousel-item.animate{
+    transition: all 1s;
+}
+.navigation-chevron{
+    cursor: pointer;
+    width: 5%;
+    height: 40%;
+}
+.navigation-chevron.left{
+    background: url('/Svg/ChevronLeft.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.navigation-chevron.right{
+    background: url('/Svg/ChevronRight.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.navigation-container-wrapper{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.navigation-image-container{
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.58);
+    position: relative;
+    overflow: hidden;
+}
+.navigation-image-container.center{
+    justify-content: center;
+}
+.navigation-image-wrapper{
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+    opacity: 40%;
+    box-sizing: border-box;
+    padding: 7px 3px 5px 3px;
+}
+.navigation-image-wrapper.absolute{
+    position: absolute;
+}
+.navigation-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vh;
+    object-fit: cover;
+}
+.navigation-image-wrapper.selected{
+    opacity: 100%;
+}
+.navigation-image-wrapper.animate{
+    transition: all 1s;
+}
